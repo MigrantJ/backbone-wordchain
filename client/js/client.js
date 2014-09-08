@@ -1,7 +1,7 @@
 'use strict';
 
 var $ = require('jquery'),
-    _ = require('lodash'),
+    _ = require('underscore'),
     Backbone = require('backbone');
     Backbone.$ = $;
 
