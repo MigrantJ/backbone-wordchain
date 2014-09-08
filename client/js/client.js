@@ -5,7 +5,9 @@ var $ = require('jquery'),
     Backbone = require('backbone');
     Backbone.$ = $;
 
+var MasterView = require('./views/view-master');
+
 //executed on document ready
 $(function () {
-  $('#content').html('<h1>hi there</h1>');
+  var masterView = new MasterView();
 });
