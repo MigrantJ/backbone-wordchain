@@ -21,10 +21,11 @@ module.exports  = function(grunt) {
     browserify: {
       client: {
         options: {
-          transform: ['debowerify','hbsify'],
+          transform: ['debowerify','hbsfy'],
           debug: true
         },
         src: ['client/js/**/*.js','client/js/templates/*.*'],
+        external: ['Backbone'],
         dest: 'build/bundle.js'
       },
       test: {
