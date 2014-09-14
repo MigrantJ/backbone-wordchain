@@ -3,7 +3,7 @@
 var $ = require('jquery');
 
 var MasterView = require('./views/view-master'),
-	ModelTest = require('../models/model-test.js'),
+	ModelTest = require('./models/model-test.js'),
     model = new ModelTest({});
 
 //executed on document ready

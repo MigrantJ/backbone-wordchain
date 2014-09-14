@@ -95,4 +95,5 @@ module.exports  = function(grunt) {
   grunt.registerTask('test', ['mocha']);
   grunt.registerTask('build', ['clean','copy:client','browserify:client','browserify:test']);
   grunt.registerTask('dev', ['build','test','concurrent:dev']);
+  grunt.registerTask('default', ['dev']);
 };
